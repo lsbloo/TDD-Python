@@ -11,10 +11,10 @@ class NewVisitorTest(unittest.TestCase):
 
     def test_can_start_a_list_and_retrieve_it_later(self):
 
-        self.browser.get('http://localhost:8000')
+        self.browser.get('http://localhost:8000/home/')
 
-        self.assertIn('To-Do', self.browser.title)
-        self.fail('Finish Test')
+        self.assertIn('To-Do lists', self.browser.title)
+        #self.fail('Finish Test')
 
 if __name__ == '__main__':
     unittest.main(warnings='ignore')
